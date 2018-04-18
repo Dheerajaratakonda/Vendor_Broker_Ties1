@@ -1,0 +1,528 @@
+*{
+	margin:0;
+	padding:0;
+	/* top:0; */
+	/* right:0; */
+	/* left:0 */
+}
+
+.login_c{
+	width:40%;
+	outline: none;
+	border: none;
+	border-bottom:1px solid gray;
+	border-bottom-color:gray;
+	transition: width 0.4s,border-bottom 0.3s;
+}
+
+.login_c:focus{
+	width:42%;
+	border-bottom:1.5px solid darkcyan;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .handshake{
+        display:none !important;
+		}
+} 
+@media only screen and (max-width: 600px){
+	.one{
+		display:none !important;
+	}
+	.two{
+		width:100% !important;
+	}
+	
+}
+
+.headings{
+	font-family: 'Libre Baskerville', serif;
+	text-align:center;
+}
+ 
+ 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+	min-width:700px;
+	text-align:center;
+	table-layout:fixed;
+}
+
+td, th {
+	word-wrap:break-word;
+    border: 1px solid #dddddd;
+    text-align:center;
+    padding: 8px;
+}
+thead{
+	background-color:lightgray;
+}
+
+
+tr:hover {background-color:#f5f5f5;}
+
+.onehead{
+background-color:#1E90FF;
+}
+
+.one1{
+ background-color:#1E90FF; 	
+}
+
+.col-xs-3{
+padding-left:0px;
+padding-right:0px;
+}
+.col-xs-9{
+padding-left:0px;
+padding-right:0px;
+}
+
+.ttwo{
+font-size:20px;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 13px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.button4{
+background-color:		#FF0000;
+color:white;
+margin-right:100px;
+ padding: 13px 13px;
+display:inline-block;
+}
+.admin{
+padding-left:0px;
+padding-right:0px;
+}
+
+.button3{
+display:inline-block;
+ padding: 15px 15px;
+}
+.ten{
+color:white;
+}
+.fa-trash{
+color:white;
+}
+
+.edit{
+    display: none;
+    border:1px solid #000;
+    height:17px;
+    width:24px;
+    margin-left:100px;
+	background-color:black;
+	color:white;
+	font-size:10px;
+}
+
+.my:hover + .edit{
+    display: block;
+	position:absolute;
+	cursor:pointer;
+
+}​
+.my:hover{
+	cursor:pointer;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+ .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+	position:absolute;
+    visibility: visible;
+	
+}
+
+.class1{
+	padding-top: 5px
+	
+}
+
+
+li:after
+ {
+ padding-right:3px;
+ padding-left:5px;
+ }
+ 
+
+li:last-child:after
+{ content: " "; 
+} 
+body {
+  margin: 10px;
+}
+.one{
+background-color:green;
+color:white;
+}
+.two{
+padding-top:10px;
+padding-bottom:10px;
+}
+.three{
+text-align:right;
+background-color:#1E90FF;
+padding-top:10px;
+padding-bottom:15px;
+padding-right:30px;
+}
+.four{
+width:20px;
+height:20px;
+
+}
+
+.five{
+color:white;
+padding-left:7px;
+font-size:16px;
+}
+
+.hi {
+    display: none;
+    border:1px solid #000;
+    height:17px;
+    width:24px;
+    margin-left:10px;
+	background-color:black;
+	color:white;
+	font-size:10px;
+}
+
+i:hover + .hi{
+    display: block;
+
+}
+
+i:hover{
+	cursor:pointer;
+}
+
+
+/*navbar*/
+.topnav {
+  overflow: hidden;
+  background-color: #008cd2;
+  left:0;
+  right:0;
+  background-image: radial-gradient(ellipse farthest-corner at 0 3000%,#56b146 72%,#008cd2 0);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 1005px) {
+  .topnav .nav-items, .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .line{
+	  display:none;
+  }
+}
+
+@media screen and (max-width: 1005px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive .nav-items {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  .line{
+	  display:none;
+  }
+}
+
+ .scrollme1 { 
+     overflow-x: auto;
+ } 
+ @media screen and (min-width: 992px) { 
+     .scrollme1{ 
+       
+         overflow-x: auto; 
+    } 
+} 
+
+
+/* For Reports CSV download*/
+
+.btn-group>.btn:first-child {
+    right:23vw;
+    margin:1em 0 0;
+}
+
+@media screen and (max-width:1200px) {
+    .btn-group>.btn:first-child {
+        right:15vw;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .btn-group>.btn:first-child {
+        right:9vw;
+    }
+}
+
+
+
+/* For input data */
+
+/*delete*/
+
+#delete{
+    margin-right:2vw;
+	position: absolute !important;
+    margin-top: 74vh !important;
+}
+
+/* for start date and end date */
+.sdate{
+	width:100%;
+}
+.edate{
+	width:100%;
+}
+
+/* for admin navbar */
+.line{
+color:white;	
+}
+
+
+/* For modal-content */
+.modal-content{
+	
+	 max-height: calc(100vh - 50px) !important;
+    overflow-y: auto !important;
+	
+}
+
+/*sort caret*/
+
+.caret{
+	 color:black !important;
+}
+/* For table and navbar in same line */
+.tab{
+	margin:0 !important;
+	padding-left:30px;
+	padding-right:30px;
+}
+
+
+
+/* on click on item description inside modal-body*/
+@media screen and (max-width:1140px) {
+	.inside{
+		width:75vw !important;
+	}
+	
+}
+
+@media screen and (max-width:768px) {
+	.inside{
+		width:85vw !important;
+	}
+	
+}
+
+
+/* In admin welcome screen for button to come down */
+.buttonDelete{
+	position: absolute !important;
+    margin-top: 60vh !important;
+    right: 292px !important;
+}
+
+/* For upload functionality */
+/* .upload{ */
+    /* margin-left: -501px; */
+/* } */
+/* } */
+/* #file{ */
+/* margin-left:-46% !important; */
+/* margin-top: -15% !important;	 */
+/* } */
+
+
+/* to view all items */
+.aitem{
+	margin-top:-2em;
+	margin-left:80% !important;
+}
+
+
+/* pagination */
+
+.react-bs-table-sizePerPage-dropdown{
+	 display:none; 
+}
+
+.react-bootstrap-table-page-btns-ul{
+	float:right;
+}
+
+
+/* For badge color */
+.bnot{
+	background-color:red !important;
+}
+
+
+/* In add screen for text allign */
+.aname{
+	text-align:right;
+}
+.col{
+	color:red;
+}
+
+
+
+/* For all items add */
+.aiadd{
+margin-left:5em !important;
+}
+
+/* for pagination styles*/
+/* .pagination{ */
+	/* margin-left:0px !important; */
+	/* margin-bottom:40px !important; */
+	/* margin-left:0px !important; */
+	/* margin-top: 0px !important; */
+/* } */
+/* #delete{ */
+	/* margin-left: -426px !important; */
+	/* margin-top: 543px !important; */
+	
+/* } */
+.nav-logo{
+	margin-top: 10px;
+    margin-left: 7px;
+}
+
+/*download csv*/
+.react-bs-table-csv-btn{
+	right:0px !important;
+	margin-left:85vw !important;
+}
+
+@media screen and (max-width:1050px) {
+	.react-bs-table-csv-btn{
+		right:0px !important;
+		margin-left:80vw !important;
+	}
+}

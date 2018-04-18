@@ -1,0 +1,29 @@
+.rimg{
+                width:20%;
+}
+.rtext{
+                font-size:20px;
+                
+ }
+.rone{
+                width:90%;
+                color:black;
+                font-weight:bold;
+}
+.rbox{
+                width:30%;
+                border:1px solid black;
+}
+.rmyClass{
+                width:100%;
+                  white-space: normal;
+                word-wrap: break-word;
+}
+.rbutton{ 
+                 width:80%;
+                white-space: normal;
+                word-wrap: break-word;
+}
+.rrow{
+                margin-top:40px;
+}

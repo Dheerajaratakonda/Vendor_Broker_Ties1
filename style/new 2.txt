@@ -1,0 +1,28 @@
+1. Login demo has been completed 
+
+Admin/Broker/vendor/Opco Viewer can login through the UI
+Various validations has been done before logging in 
+The Admin/Broker/Vendor/Opco view scrren view/add/update/delete along with data binding has been completed. (services completed for fetching the details)
+Upload functionality is completed.
+
+<BootstrapTable ref='table' data={ products } pagination className="scrollme1" exportCSV options={options}  csvFileName='locations.csv'>
+				   
+							<TableHeaderColumn ref='broker' dataField='broker' isKey={ true }dataSort={ true } filter={ { type: 'TextFilter'} } >Opco Id/TableHeaderColumn>
+						
+							<TableHeaderColumn ref='vendor_no' dataField='vendor_no' dataSort={ true } filter={ { type: 'TextFilter'} } >Item Id</TableHeaderColumn>
+						
+							<TableHeaderColumn ref='market' dataField='market' dataSort={ true } filter={ { type: 'TextFilter' } }>Vendor</TableHeaderColumn>
+						
+							<TableHeaderColumn ref='cmim' dataField='cmim' dataSort={ true } filter={ { type: 'TextFilter' } }>Broker Name</TableHeaderColumn>
+						
+							<TableHeaderColumn ref='cmim' dataField='cmim' dataSort={ true } filter={ { type: 'TextFilter' } }>Broker Code</TableHeaderColumn>
+						
+							<TableHeaderColumn ref='item' dataField='item' dataSort={ true } filter={ { type: 'TextFilter' } }>User Id</TableHeaderColumn>
+						
+							<TableHeaderColumn dataField='idesc'  dataSort={ true }  filter={ { type: 'TextFilter'}}>Creation Date</TableHeaderColumn>
+						
+							<TableHeaderColumn ref='sdate' dataField='sdate' dataSort={ true } filter={ { type: 'TextFilter' }}>Modification Date</TableHeaderColumn>
+						
+							<TableHeaderColumn ref='edate' dataField='edate' dataSort={ true } filter={ { type: 'TextFilter' }}>Type of Audits</TableHeaderColumn>
+						
+					  </BootstrapTable>

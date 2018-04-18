@@ -1,0 +1,2 @@
+1. Delete function (AJAX calls) for admin
+2. User ID should be removed from the Add user screen/Admin

@@ -1,0 +1,15 @@
+export const style = {
+	container : {
+		paddingTop: "15%"
+	},
+	container1 :{
+		backgroundSize: "contain",
+		width:"100%",
+		height: "100vh"
+	
+		
+	}
+		
+	
+	
+}

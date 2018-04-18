@@ -1,0 +1,363 @@
+.login_c{
+	width:40%;
+	outline: none;
+	border: none;
+	border-bottom:1px solid gray;
+	border-bottom-color:gray;
+	transition: width 0.4s,border-bottom 0.3s;
+}
+
+.login_c:focus{
+	width:42%;
+	border-bottom:1.5px solid darkcyan;
+}
+
+
+@media only screen and (max-width: 991px) {
+   .one, .handshake{
+        display:none !important;
+		}
+} 
+
+
+ 
+ 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+	min-width:500px;
+	height:400px;
+	text-align:center;
+	table-layout:fixed;
+}
+
+td, th {
+	word-wrap:break-word;
+    border: 1px solid #dddddd;
+    text-align:center;
+    padding: 8px;
+}
+
+tr:hover {background-color:#f5f5f5;}
+
+.onehead{
+background-color:#1E90FF;
+}
+
+.one1{
+ background-color:#1E90FF; 	
+}
+
+.col-xs-3{
+padding-left:0px;
+padding-right:0px;
+}
+.col-xs-9{
+padding-left:0px;
+padding-right:0px;
+}
+
+.ttwo{
+font-size:20px;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button2 {
+background-color: #008CBA;
+margin-left: 1000px;
+
+} 
+.button4{
+background-color:		#FF0000;
+color:white;
+margin-right:100px;
+ padding: 13px 13px;
+display:inline-block;
+}
+.admin{
+padding-left:0px;
+padding-right:0px;
+}
+
+.button3{
+display:inline-block;
+ padding: 15px 15px;
+}
+.ten{
+color:white;
+}
+.fa-trash{
+color:white;
+}
+
+.edit{
+    display: none;
+    border:1px solid #000;
+    height:17px;
+    width:24px;
+    margin-left:100px;
+	background-color:black;
+	color:white;
+	font-size:10px;
+}
+
+.my:hover + .edit{
+    display: block;
+	position:absolute;
+	cursor:pointer;
+
+}​
+.my:hover{
+	cursor:pointer;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+ .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+	position:absolute;
+    visibility: visible;
+	
+}
+.scrollme {
+    overflow-y: auto;
+}
+
+.class1{
+	padding-top: 5px
+	
+}
+
+
+li:after
+ {
+ padding-right:3px;
+ padding-left:5px;
+ }
+ 
+
+li:last-child:after
+{ content: " "; 
+} 
+body {
+  margin: 10px;
+}
+.one{
+background-color:green;
+color:white;
+}
+.two{
+padding-top:10px;
+padding-bottom:10px;
+}
+.three{
+text-align:right;
+background-color:#1E90FF;
+padding-top:10px;
+padding-bottom:15px;
+padding-right:30px;
+}
+.four{
+width:20px;
+height:20px;
+
+}
+
+.five{
+color:white;
+padding-left:7px;
+font-size:16px;
+}
+
+.hi {
+    display: none;
+    border:1px solid #000;
+    height:17px;
+    width:24px;
+    margin-left:10px;
+	background-color:black;
+	color:white;
+	font-size:10px;
+}
+
+i:hover + .hi{
+    display: block;
+
+}
+
+i:hover{
+	cursor:pointer;
+}
+
+
+/*navbar*/
+.topnav {
+  overflow: hidden;
+  background-color: darkcyan;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 740px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .line{
+	  display:none;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  .line{
+	  display:none;
+  }
+}
+
+.scrollme1 {
+  
+    overflow-y: auto;
+}
+@media screen and (min-width: 992px) {
+    .scrollme1{
+        width:75vw;
+    }
+}
+
+
+/* For Reports CSV download*/
+
+.btn-group>.btn:first-child {
+    margin-left: 0;
+    margin-bottom: 25px;
+	margin-left:370px !important;
+	float:right;
+}
+
+
+/* For seperator*/
+.line{
+	color:white;
+}
+
+/* For date input changing*/
+.sdate{
+	width:130px;
+}
+.edate{
+	width:130px;
+}

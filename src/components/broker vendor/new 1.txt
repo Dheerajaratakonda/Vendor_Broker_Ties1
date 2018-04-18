@@ -1,0 +1,156 @@
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import axios from 'axios';
+ import FormGroup from 'react-bootstrap/lib/FormGroup';
+import { BrowserRouter as Router, Route, Link,Switch} from 'react-router-dom';
+import NavBar1 from './navbar.jsx';
+
+
+
+class Login extends React.Component {
+	constructor(props){
+        
+		super(props);
+		this.state={disp:'none',data:[]};
+		this.toggle=this.toggle.bind(this);
+		this.remove=this.remove.bind(this);
+		this.conf=this.conf.bind(this);
+		this.edit=this.edit.bind(this);
+		this.add=this.add.bind(this);
+		this.seeDetails=this.seeDetails.bind(this);
+	}
+   
+    componentWillMount(){
+     axios.get("./brokerDetails.json")
+            .then(response=> {
+                for (var i in response.data){
+                    this.state.data.push(response.data[i]);
+                }
+                this.setState({data:this.state.data});
+                
+             });
+    }
+
+   
+    
+    
+
+    
+	conf(c){
+	 var x = confirm("Are you sure you want to delete?");
+		  if (x)
+			  return true;
+		  else
+			return false;
+		}	
+		
+	
+	
+	remove(e1){	
+        console.log(this.state.data.length)
+        for (var i=0;i<this.state.data.length;i++){
+            document.getElementById("myCheck"+i).checked=false;		
+       }
+       this.setState({disp:'none'});
+	}
+	
+    
+    seeDetails(e){
+		this.props.history.push("/details");
+	}
+	
+	 toggle(e){
+		var arr=[];
+        for(var i in this.state.data){
+        var id="myCheck"+i;
+        arr.push(document.getElementById(id).checked)
+        }
+        var flag=false;
+        arr.forEach(function(el){
+         
+			if (el){
+			 flag=true;
+			}
+        });
+		if(flag==true){
+			this.setState({disp:'inline'});
+		 }else{
+			this.setState({disp:'none'}); 
+				}
+		}
+		edit(e){
+            const s=[];
+		
+			
+			
+            var index=e.target.name;
+			alert("Cell index is: " + e.cellIndex);
+            console.log("hi",this.state.data.cellIndex);
+			
+			
+			this.props.history.push({pathname:'/edit',
+                                    state:{
+                                        code:this.state.data[index].code, name:this.state.data[index].name, leadBroker:this.state.data[index].leadBroker, email:this.state.data[index].email
+                                    }});
+            
+		}
+		
+		add(e){
+			this.props.history.push('/add');
+		}
+    
+
+
+        render(){
+            const row=[];
+            for (var i in this.state.data){
+				console.log("value",i);
+                            row.push(<tr>
+                            <td><input type="checkbox" name="gender" value="" onClick={this.toggle} id={`myCheck${i}`}/></td>
+                            <td><i className="fa fa-edit my" name={i}  onClick={this.edit} value="" ></i><div className="edit">Edit</div></td>
+                                     <td >{this.state.data[i].code}</td>
+                            <td><span onClick={this.seeDetails} style={{cursor:"pointer"}}>{this.state.data[i].name}</span></td>
+                    <td>{this.state.data[i].leadBroker}</td>
+                            <td>{this.state.data[i].email}</td>
+
+                            </tr>)
+
+                        }
+      	     return (
+						<div className="container">
+							<NavBar1/>
+
+							<div className="row">
+							<div className="col-md-12 col-xs-12 col-sm-12 scrollme">
+							<table className="table-responsive">
+								<thead>
+									<tr>
+										<th style={{height:"3em"}}></th>
+										<th style={{height:"3em"}}></th> 
+										<th style={{height:"3em"}}>Code</th>
+										<th style={{height:"3em"}}>Name</th>
+										<th style={{height:"3em"}}>Lead Broker</th>
+										<th style={{height:"3em"}}>Email</th>
+									</tr>
+								</thead>
+								<tbody>{row}</tbody>
+
+	  
+							</table>
+							</div>
+								<button className="button button2 btn btn-primary" style={{float:"right"}} onClick={this.add}>+ ADD</button> 
+								<span style={{float:"left"}}>
+									<button className="button3" style={{display:this.state.disp}} onClick={this.conf} id="dis" >Delete</button>
+									<button className="button4" style={{display:this.state.disp}} onClick={this.remove}>CANCEL</button>
+								</span>
+							</div>
+						</div>
+   
+)
+}
+						 
+    }
+
+
+export default Login;

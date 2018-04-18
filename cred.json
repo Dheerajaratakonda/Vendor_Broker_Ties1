@@ -1,0 +1,6 @@
+[
+    {"type":"admin","username":"David","password":"sysco123"},
+    {"type":"user","username":"Ashley","password":"sysco123"},
+    {"type":"viewer","username":"Vendor","password":"sysco123"},
+    {"type":"opcoviewer","username":"opco","password":"sysco123"}	
+]	
