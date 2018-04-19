@@ -1,0 +1,9 @@
+version: '2'
+services:
+  vbt-ui:
+    image: sysco/vbui:vbuiimage
+    ports:
+      - '8080:8080'
+    labels:
+      io.rancher.scheduler.affinity:host_label: service=SUS_UI
+      io.rancher.container.pull_image: always
